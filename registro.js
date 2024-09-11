@@ -6,7 +6,7 @@ function cadastrar() {
     const name = document.getElementById('name').value;
     const password = document.getElementById('password').value;
     if(name && password){
-        let regex = /^(?=(?:.*?[A-Z]){0})(?=(?:.*?[0-9]){1})(?=(?:.*?[!@#$%*()_+^&}{:;?.]){0})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&]*$/;
+        let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$%^&*(){}_+^&]*$/;
         if(password.length < 6){
             alert("a senha deve conter no minimo 6 digitos");
             return;
